@@ -12,8 +12,8 @@ sass.compiler = require('node-sass');
 
 // Styles ---------------------------------------------------------
 var  styles = {
-    src: 'src/_assets/css/scss/**/*.scss',
-    dest: 'src/_assets/css',
+    src: 'src/assets/css/scss/**/*.scss',
+    dest: 'src/assets/css',
     filename: 'style.min.css'
 }
 
@@ -37,8 +37,8 @@ function watchStyles() {
 
 // Scripts ---------------------------------------------------------
 var  scripts = {
-  src: 'src/_assets/js/src/**/*.js',
-  dest: 'src/_assets/js',
+  src: 'src/assets/js/src/**/*.js',
+  dest: 'src/assets/js',
   filename: 'script.min.js'
 }
 
