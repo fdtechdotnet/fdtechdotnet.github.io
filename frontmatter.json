@@ -1,0 +1,77 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "lastDateUpdated",
+          "name": "lastDateUpdated",
+          "type": "datetime"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "datetime"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "11ty",
+  "frontMatter.preview.host": "http://localhost:8080",
+  "frontMatter.content.pageFolders": [],
+  "frontMatter.taxonomy.categories": [
+    "Certification",
+    "Featured",
+    "General",
+    "Get Started",
+    "Samples",
+    "Website Updates"
+  ],
+  "frontMatter.taxonomy.tags": [
+    "article",
+    "cloud-architecture",
+    "cloud-infrastructure",
+    "development",
+    "devops-practices",
+    "featured",
+    "github",
+    "infrastructure",
+    "microsoft-azure",
+    "operations",
+    "process-automation",
+    "software-delivery",
+    "software-development",
+    "software-development-lifecycle",
+    "software-engineering",
+    "webapp-delivery",
+    "webapp-development"
+  ]
+}

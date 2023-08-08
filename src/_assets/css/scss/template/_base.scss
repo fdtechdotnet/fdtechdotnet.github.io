@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Saira&display=swap');
+
+* {
+    box-sizing: content-box !important;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Montserrat', Verdana;
+    font-size: var(--text-size-default);
+    color: var(--text-light);
+    min-width: var(--device-width-sm);
+    padding: 0;
+    margin: 0;
+
+    .base-header {
+        border-bottom: solid 1px var(--bg-slategray);
+        background-color: var(--bg-dark);
+        box-shadow: var(--shadow-dark-bottom);
+        -webkit-box-shadow: var(--shadow-dark-bottom);
+        -moz-box-shadow: var(--shadow-dark-bottom);
+        padding: var(--two-spacing) 0;
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 var(--default-spacing);
+        }
+
+        &__brand {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap: var(--default-spacing);
+
+            .brand-logo {
+                width: 60px;
+            }
+
+            .brand-title {
+                font-family: var(--font-title);
+                color: var(--text-light);
+                font-size: var(--text-size-lg);
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 0;
+                margin: 0;
+            }
+
+            .brand-subtitle {
+                font-family: var(--font-body);
+                color: var(--text-light);
+                font-size: var(--text-size-sm);
+                text-transform: capitalize;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+
+    }
+
+    .base-content {
+        margin: var(--three-spacing) 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--two-spacing);
+    }
+
+    .base-footer {
+        color: var(--text-light);
+        padding: var(--two-spacing) var(--default-spacing);
+        margin: 0;
+        border-top: solid 1px var(--bg-slategray);
+        background-color: var(--bg-dark);
+        box-shadow: var(--shadow-dark-top);
+        -webkit-box-shadow: var(--shadow-dark-top);
+        -moz-box-shadow: var(--shadow-dark-top);
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--default-spacing);
+            padding: 0;
+        }
+    }
+}

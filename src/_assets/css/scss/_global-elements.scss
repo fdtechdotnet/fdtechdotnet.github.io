@@ -1,0 +1,118 @@
+nav, header, main, footer, section, article, .container {
+    -webkit-transition: width 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+    transition: width 500ms ease-in-out;
+}
+
+article, p {
+    line-height: var(--text-lineheight);
+}
+
+hr {
+    border: inset 2px var(--bg-slategray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Saira", 'Segoe UI';
+    color: var(--text-primary);
+    margin: 0 0 calc(var(--default-spacing)/2) 0;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+
+h3, h4, h5, h6 {
+    text-transform: capitalize;
+    padding: 0;
+}
+
+h1 { font-size: xx-large; }
+h2 { font-size: x-large; }
+h3 { font-size: larger; }
+h4 { font-size: large; }
+h5 { font-size: medium; }
+h6 { font-size: smaller; }
+
+a {
+    text-decoration: none; color: var(--text-primary);
+
+    &:visited { text-decoration: none; color: var(--text-primary); }
+    &:hover {  color: var(--text-light); }
+}
+
+small, .small { font-size: smaller; }
+
+ul {
+    list-style-type: square;
+
+    > li::marker {
+        color: var(--text-primary);
+    }
+}
+
+ol {
+    list-style: decimal-leading-zero;
+}
+
+blockquote {
+    border-left: solid 5px var(--bg-primary);
+    padding-left: var(--two-spacing);
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+
+    & > p {
+        padding: var(--default-spacing) 0;
+        margin: 0;
+    }
+}
+
+pre, code {
+    background-color: var(--bg-slategray);
+    border-radius: 3px;
+    padding: calc(var(--default-spacing)/2) var(--default-spacing);
+}
+
+pre > code {
+    padding: 0;
+}
+
+table {
+    border-radius: .25rem;
+    padding: var(--default-spacing);
+
+    & > thead, & > tbody {
+        vertical-align: text-top;
+        text-align: left;
+    }
+
+    & > thead {
+        text-transform: uppercase;
+        font-family: var(--font-title);
+        font-size: var(--text-size-default);
+    }
+
+    td {
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--bg-primary);
+        margin: 0;
+    }
+}
+
+
+.container {
+    max-width: calc(var(--device-width-lg) - (2 * var(--default-spacing)));
+    padding: var(--two-spacing) auto;
+    margin: 0 auto;
+}
+
+.content-block {
+    box-shadow: 1rem 1rem 1rem var(--shadow-dark);
+    background-color: var(--bg-slategray);
+    padding: var(--default-spacing);
+    border-radius: var(--half-spacing);
+}
