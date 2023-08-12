@@ -1,0 +1,21 @@
+<section class="repository-ltf-cards">
+    <div class="repository-ltf-cards__container">
+
+        {% for repository in githubRepositories %}
+        <article class="ltf-card">
+            <header>
+                <i class="fa-brands fa-github fa-2x"></i>
+                <h3 class="ltf-card__title">{{ repository.name }}</h3>
+            </header>
+            <p class="ltf-card__description">{{ repository.description }}</p>
+            <footer>
+                <a href="{{ repository.name | slugify }}">Documentation</a>
+                <span class="divider"> | </span>
+                <a href="{{ repository.link }}" target="_blank">Repository</a>
+                <span class="divider"> | </span>
+                <span class="ltf-card__status">{{ repository.status }}</span>
+            </footer>
+        </article>
+        {% endfor %}
+    </div>
+</section>

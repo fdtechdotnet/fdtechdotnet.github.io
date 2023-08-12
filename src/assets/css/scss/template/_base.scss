@@ -37,10 +37,16 @@ body {
             flex-wrap: nowrap;
             justify-content: flex-start;
             align-items: center;
-            gap: var(--default-spacing);
+            gap: var(--half-spacing);
 
             .brand-logo {
                 width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                box-shadow: var(--shadow-dark-bottom);
+                -webkit-box-shadow: var(--shadow-dark-bottom);
+                -moz-box-shadow: var(--shadow-dark-bottom);
+
             }
 
             .brand-title {
@@ -57,7 +63,7 @@ body {
                 font-family: var(--font-body);
                 color: var(--text-light);
                 font-size: var(--text-size-sm);
-                text-transform: capitalize;
+                text-transform: lowercase;
                 padding: 0;
                 margin: 0;
             }

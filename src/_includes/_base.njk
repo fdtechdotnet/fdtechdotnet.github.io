@@ -20,7 +20,7 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-M489ZSBR');</script>
         <!-- End Google Tag Manager -->
-        <title>{{ title }}</title>
+        <title>{{ profile.title }}</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Documentations for Fullstack-dev Technology">
@@ -30,7 +30,7 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5295597570562522"
             crossorigin="anonymous"></script>
         {% mermaid_js %}
-        <link rel="icon" href="/assets/img/logo.png">
+        <link rel="icon" href="/assets/img/profile-picture.jpeg">
         <link rel="stylesheet" href="/assets/css/style.min.css">
     </head>
     <body>
@@ -45,10 +45,10 @@
         <header class="base-header">
             <div class="container base-header__container">
                 <a class="base-header__brand" href="/">
-                    <img class="brand-logo" src="/assets/img/logo.png" alt="Logo Thumbnail">
+                    <img class="brand-logo" src="/assets/img/profile-picture.jpeg" alt="Logo Thumbnail">
                     <div>
-                        <p class="brand-title">{{ siteName }}</p>
-                        <small class="brand-subtitle">{{ siteSubtitle }}</small>
+                        <p class="brand-title">{{ profile.name }}</p>
+                        <small class="brand-subtitle">@{{ profile.githubUsername }}</small>
                     </div>
                 </a>
                 <div class="base-header__default-nav">
@@ -59,10 +59,11 @@
         <main class="base-content">{{ content | safe }}</main>
         <footer class="base-footer">
             <section class="container base-footer__container">
-                {% include '_base-nav.njk' %}
                 <small class="footnote">
-                    &copy; {% currentYear %} - Developed by <a href="{{ githubProfile }}" target="_blank">{{ author }}</a>
+                    <span>&copy; {% currentYear %} - Developed by</span>
+                    <a href="https://github.com/{{ profile.githubUsername }}" target="_blank">{{ profile.name }}</a>
                 </small>
+                {% include '_base-nav.njk' %}
             </section>
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

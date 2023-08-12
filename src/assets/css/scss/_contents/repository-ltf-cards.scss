@@ -1,0 +1,76 @@
+.repository-ltf-cards {
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--two-spacing);
+        color: var(--text-light);
+
+        .ltf-card {
+            background-color: var(--bg-slategray);
+            border-top: solid 5px var(--bg-primary);
+            padding: var(--two-spacing) var(--two-spacing) var(--default-spacing) var(--two-spacing);
+            display: flex;
+            flex-direction: column;
+
+            > header {
+                border-bottom: solid 1px var(--bg-dark);
+                padding-bottom: var(--default-spacing);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+                gap: var(--default-spacing);
+
+                > * {
+                    clear: both;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            > footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                gap: var(--default-spacing);
+                font-size: var(--text-size-sm);
+                border-top: solid 1px var(--bg-dark);
+
+                > * {
+                    padding-top: var(--half-spacing);
+                }
+
+                .divider {
+                    color: var(--bg-dark);
+                }
+
+                a {
+                    font-weight: bold;
+                }
+            }
+
+            &__title {
+                text-transform: unset;
+                font-family: var(--font-title);
+                font-size: var(--text-size-md);
+                font-weight: bold;
+                color: var(--text-primary);
+            }
+
+            &__description {
+                color: var(--text-light);
+                font-size: var(--text-size-sm);
+                line-height: 1.5;
+                flex: 1;
+            }
+
+            &__status {
+                color: var(--text-lightgray);
+                font-size: var(--text-size-sm);
+            }
+        }
+    }
+}

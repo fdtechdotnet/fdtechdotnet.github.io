@@ -46,7 +46,8 @@ module.exports = function(config) {
 
     config.addFilter("slugify", (str) => {
         if (!str) { return; }
-        return slugify(str, {
+
+        return slugify(str.replaceAll(".", "-"), {
             lower: true,
             strict: true,
             remove: /["]/g,

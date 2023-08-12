@@ -1,0 +1,32 @@
+[
+    {
+        "name": "fdtechdotnet.github.io",
+        "description": "Static site generator for GitHub Page using Eleventy (11ty), Nunjucks, and FrontMatter. This project aims to create page as github portfolio for the user which primarily shows repositories as well as related details and activities.",
+        "link": "https://github.com/fdtechdotnet/fdtechdotnet.github.io",
+        "status": "In-Progress"
+    },
+    {
+        "name": "github-repo-001",
+        "description": "Diam labore labore dolores dolores est diam duo gubergren est, magna ipsum lorem ut gubergren no et accusam diam. Ipsum diam sanctus amet aliquyam, consetetur.",
+        "link": "https://github.com/fdtechdotnet/fdtechdotnet.github.io",
+        "status": "Completed"
+    },
+    {
+        "name": "github-repo-002",
+        "description": "Relief he name by sight childe his hellas. Within but whilome pangs wins noontide plain, fellow memory pillared been and it one olden to, happy.",
+        "link": "https://github.com/fdtechdotnet/fdtechdotnet.github.io",
+        "status": "Blocked"
+    },
+    {
+        "name": "github-repo-003",
+        "description": "Nome sí quella e fu ciascheduna non fallo divina fragilita, beato pieno non uomini esse mortali a quali, esse sogiacere cosa mortale sí incominciare, potendo.",
+        "link": "https://github.com/fdtechdotnet/fdtechdotnet.github.io",
+        "status": "In-Progress"
+    },
+    {
+        "name": "github-repo-004",
+        "description": "Was glück diesmal und halbverklungnen selbst widerklang nennt den, fühl bang in erste besitze zauberhauch einst sich, kommt gesänge herz ihr und euch die, bringt.",
+        "link": "https://github.com/fdtechdotnet/fdtechdotnet.github.io",
+        "status": "Completed"
+    }
+]
